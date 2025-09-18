@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} My webside {% endblock %}</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif; padding: 20px;}
+        header{background: #333; color: white; padding: 10px;}
+        footer{background: yellow; padding: 10px; margin-top: 20px;}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>My site</h2>
+        <nav> <!-- for navbar(top of the page) page -->
+            <a href="/">home</a> <!-- for home page(connecting to python .route("/")) -->
+            <a href="/about">about</a> <!-- for about page page (connecting to .route("/about"))-->
+        </nav>
+    </header>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <p>@2022 CODINGWISE ACADEMY INDIA'S BEST IT TRAINING AND PLACEMENT INSITUTE </p>
+        </footer>
+    
+</body>
+</html>
